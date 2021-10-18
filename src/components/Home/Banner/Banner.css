@@ -1,0 +1,14 @@
+.banner {
+  background: url("../../../images/banner.jpg") no-repeat center;
+  background-size: cover;
+  padding: 10rem 0;
+}
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner h2 {
+  font-family: "quicksand";
+  font-weight: bold;
+}
