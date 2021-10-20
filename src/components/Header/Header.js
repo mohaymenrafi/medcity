@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Menu from './Menu/Menu';
 import TopBar from './TopBar/TopBar';
+import Navmenu from './Navmenu/Navmenu';
 
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
     return (
         <div>
             <TopBar></TopBar>
-            <Menu></Menu>
+            <Navmenu></Navmenu>
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.about-banner {
+  background: url("../../images/about-banner.jpg") no-repeat center;
+  background-size: cover;
+}
+.sand {
+  font-family: "quicksand";
+}
+.about-info {
+  background: url("../../images/about-info.jpg") no-repeat center;
+  background-size: cover;
+  background-color: rgba(33, 51, 96, 0.93);
+  background-blend-mode: overlay;
+}

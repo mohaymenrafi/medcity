@@ -1,0 +1,9 @@
+.departments {
+  background: url(../../../images/departments.jpg) no-repeat center;
+  background-color: rgba(33, 205, 192, 0.85);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.departments h2 {
+  font-family: "quicksand";
+}
