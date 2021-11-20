@@ -12,6 +12,7 @@ const Home = () => {
             <InnerInfo01></InnerInfo01>
             <Departments></Departments>
             <MeetOurDoctors></MeetOurDoctors>
+    
         </div>
     );
 };
