@@ -12,12 +12,14 @@ import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
+import ScrollToTop from './utilities/ScrollToTop';
 
 function App() {
   return (
     <div>
       <AuthProvider>
         <Router>
+          <ScrollToTop></ScrollToTop>
           <Header/>
           <Switch>
             <Route exact path="/" component={Home} />

@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDW6K6YuIyLLDFIPQNYdK5gTJnP-2m4Jf4",
-  authDomain: "med-city-newyork.firebaseapp.com",
-  projectId: "med-city-newyork",
-  storageBucket: "med-city-newyork.appspot.com",
-  messagingSenderId: "227545787230",
-  appId: "1:227545787230:web:2eb850a69ce239d66d3dcf"
+  apiKey:process.env.REACT_APP_FIREBASE_APIKEY,
+  authDomain:process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  projectId:process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket:process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId:process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+  appId:process.env.REACT_APP_FIREBASE_APPID,
 };
 
 export default firebaseConfig;

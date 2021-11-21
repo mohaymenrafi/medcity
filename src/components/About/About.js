@@ -11,8 +11,8 @@ const About = () => {
         <div>
             <div className="about-banner py-16 px-4">
                 <div className="container mx-auto py-16">
-                    <h2 className="text-black text-5xl sm:text-6xl sand font-bold sm:w-8/12 lg:w-7/12">Caring For The Health & Well Being Of Family.</h2>
-                    <p className="mt-8 text-lg font-medium sm:w-8/12">Medcity has been present in Europe since 1990, offering innovative solutions, specializing in medical services for treatment of medical infrastructure.</p>
+                    <h2 className="text-white text-5xl sm:text-6xl sand font-bold sm:w-8/12 lg:w-7/12">Caring For The Health & Well Being Of Family.</h2>
+                    <p className="mt-8 text-lg font-medium sm:w-8/12 text-white">Medcity has been present in Europe since 1990, offering innovative solutions, specializing in medical services for treatment of medical infrastructure.</p>
                     <Link to="/services"><button className="mt-8 py-4 px-8 bg-black rounded-full text-white font-semibold text-lg" >Our Serivces</button></Link>
                 </div>
             </div>
