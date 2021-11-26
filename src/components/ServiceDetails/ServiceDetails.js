@@ -7,7 +7,6 @@ const ServiceDetails = () => {
     const [services] = useService();
     const { serviceId } = useParams();
     const singleService = services.filter(service => parseInt(service.id) === parseInt(serviceId))
-    console.log(singleService[0])
     return (
         <div>
             <div className="container mx-auto md:px-12 py-16 lg:w-7/12 px-4">
@@ -18,7 +17,10 @@ const ServiceDetails = () => {
                 <p className="font-normal text-black text-lg mt-6">{singleService[0]?.detailsTwo}</p>
                 <h3 className="text-textBlue sand font-semibold text-3xl sm:text-4xl mt-8">Core Values</h3>
                 <p className="font-normal text-black text-lg mt-4">{singleService[0]?.coreValue}</p>
+                <div className="mt-16">
+                    <h2 className="sand font-bold text-4xl text-center text-darkBlue capitalize">Book your appointment now</h2>
                 
+                </div>
             </div>
         </div>
     );

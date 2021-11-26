@@ -11,7 +11,7 @@ const Navmenu = ({ fixed }) => {
   const {logOut, user}= useAuth(); 
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-6 bg-white">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-6 bg-white border-b border-gray-200">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link to="/"><img src={logo} alt="" /></Link>
@@ -43,7 +43,9 @@ const Navmenu = ({ fixed }) => {
               <li className="nav-item">
                 <NavLink className="mr-4 text-lg font-semibold" to="/contact" >Contact</NavLink>
               </li>
-              {user?.email || user?.displayName ? <h2 className="sand font-semibold">{user.displayName} <button onClick={logOut} className="bg-darkBlue p-2 text-white ml-4 rounded">LogOut </button></h2> : <li className="nav-item">
+              {user?.email || user?.displayName ? <h2 className="text-lg font-semibold">
+              <Link to="/dashboard"> My Account </Link>
+                <button onClick={logOut} className="bg-darkBlue p-2 text-white ml-4 rounded">Log Out </button></h2> : <li className="nav-item">
                 <NavLink className="text-lg font-semibold" to="/login" >Login/Register</NavLink>
               </li>}
             </ul>

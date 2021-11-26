@@ -13,6 +13,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ScrollToTop from './utilities/ScrollToTop';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             <Route path="/services" component={Services} />
             <PrivateRoute path="/service/:serviceId">
               <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
             </PrivateRoute>
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />

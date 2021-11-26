@@ -1,0 +1,6 @@
+.sidemenuActive {
+  background-color: #788fc8;
+  border-left: 2px solid white;
+  transition: all 0.3s;
+  color: white;
+}
